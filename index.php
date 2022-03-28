@@ -88,13 +88,13 @@ $servicos = array(
         <section class="py-5 border-bottom" id="features">
             <div class="container px-5 my-5">
                 <div class="row gx-5">
-                <?php foreach($servicos as $servico) ?>
+                <?php foreach($servicos as $servico) : ?>
                     <div class="col-lg-4 mb-5 mb-lg-0">
-                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi "></i></div>
-                        <h2 class="h4 fw-bolder"></h2>
-                        <p></p>
+                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class=<?= $servico -> imagem ?> ></i></div>
+                        <h2 class="h5"><?= $servico->titulo ?></h2>
+                        <p class="mb-0"><?= $servico->descricao ?></p>
                     </div>
-                <?php endforeach; ?>
+                <?php endforeach ?>
                 </div>
             </div>
         </section>
